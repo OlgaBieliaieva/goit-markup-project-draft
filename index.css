@@ -29,6 +29,8 @@
 .section-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   list-style-type: none;
   margin: 0;
@@ -63,4 +65,57 @@
   font-family: Manrope;
   font-size: 14px;
   line-height: 1.71;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 0 32px;
+  }
+  .container {
+    max-width: 704px;
+  }
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .section-subtitle {
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .section-list {
+    padding: 0 64px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .teachers-card {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .card-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 0 64px;
+  }
+  .container {
+    max-width: 1024px;
+  }
+  .section-subtitle {
+    max-width: 709px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-list {
+    padding: 0;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .teachers-card {
+    flex-basis: calc((100% - 96px) / 4);
+  }
 }
