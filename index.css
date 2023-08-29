@@ -1,0 +1,66 @@
+.section {
+  padding: 0 20px;
+}
+.container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  margin: 0;
+  margin-bottom: 16px;
+  color: #121417;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+.section-subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+.section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.teachers-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  gap: 8px;
+}
+.card-title {
+  margin: 0;
+  color: #121417;
+  font-family: Manrope;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.card-description {
+  margin: 0;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 1.71;
+}
