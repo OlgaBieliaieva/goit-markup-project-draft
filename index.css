@@ -16,25 +16,23 @@
   line-height: 1.12;
   letter-spacing: -0.02em;
 }
-.section-subtitle {
-  margin: 0;
+.section-description {  
   margin-bottom: 40px;
   color: rgba(18, 20, 23, 0.5);
-  text-align: center;
-  font-family: Manrope;
-  font-size: 14px;
-  font-weight: 400;
+  text-align: center;  
+  font-size: 14px;  
   line-height: 1.71;
 }
 .section-list {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  list-style-type: none;
+  list-style-type: none; */
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
 }
 .teachers-card {
   display: flex;
@@ -66,6 +64,31 @@
   font-size: 14px;
   line-height: 1.71;
 }
+.swiper-pagination {
+  position:static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  
+}
+.swiper-pagination-bullet {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: #4DC274;
+}
+.swiper-pagination-bullet::before {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 2px solid #4DC274;
+  border-radius: 50%;
+}
 @media screen and (min-width: 768px) {
   .section {
     padding: 0 32px;
@@ -77,18 +100,18 @@
     font-size: 40px;
     line-height: 1.2;
   }
-  .section-subtitle {
+  .section-description {
     margin-bottom: 64px;
     font-size: 18px;
     line-height: 1.67;
   }
-  .section-list {
+  /* .section-list {
     padding: 0 64px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 32px;
-  }
+  } */
   .teachers-card {
     flex-basis: calc((100% - 32px) / 2);
   }
@@ -104,17 +127,17 @@
   .container {
     max-width: 1024px;
   }
-  .section-subtitle {
+  .section-description {
     max-width: 709px;
     margin-left: auto;
     margin-right: auto;
   }
-  .section-list {
+  /* .section-list {
     padding: 0;
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 32px;
-  }
+  } */
   .teachers-card {
     flex-basis: calc((100% - 96px) / 4);
   }
